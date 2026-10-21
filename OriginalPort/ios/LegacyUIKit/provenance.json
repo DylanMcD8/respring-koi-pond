@@ -1,0 +1,26 @@
+{
+  "source_firmware": "iPhone3,1 iOS 4.1 build 8B117; local CustomAP IPSW",
+  "source_artwork": "System/Library/Frameworks/UIKit.framework/Shared@2x~iphone.artwork",
+  "metadata_reference": "https://github.com/gmawji/iOS-artwork-1",
+  "entries": {
+    "312": [
+      "shared-iphone-2x-312.png",
+      36,
+      38,
+      4182016
+    ],
+    "313": [
+      "shared-iphone-2x-313.png",
+      36,
+      38,
+      4190208
+    ]
+  },
+  "decode": "BGRA premultiplied alpha, 8-pixel row alignment; decoded to PNG without resizing",
+  "logical_scale": 2,
+  "metadata_revision": "d7137424a906c190f19d96ae43a970e82c204b4e",
+  "sha256": {
+    "UIButtonInfoDark.png": "3a848c20cdc53355b6737b8070d9fd77892bb98e0ba79b05f5997cd065402af9",
+    "UIButtonInfoLight.png": "b3301f9916710b50e81ffce88ed49e4a0d11f1bed07134106dffb00884952e97"
+  }
+}

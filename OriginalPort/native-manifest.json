@@ -1,0 +1,1635 @@
+{
+  "method": "ahead-of-time partial evaluation of ARM semantics",
+  "original_sha256": "0f375e3e96e748faac4505a05924e458e1fadd69d2726bf02b6de3b31d99d8d6",
+  "classes": [
+    "*"
+  ],
+  "function_count": 322,
+  "translated_word_addresses": 19113,
+  "page_count": 75,
+  "sections": [
+    {
+      "name": "__text",
+      "address": "0x2000",
+      "size": 74856
+    },
+    {
+      "name": "__symbol_stub4",
+      "address": "0x14468",
+      "size": 1596
+    }
+  ],
+  "untranslated": "stops shipping builds; optional aot-reference interpreter for development",
+  "functions": [
+    {
+      "address": "0x2000",
+      "end": "0x204c",
+      "name": "start"
+    },
+    {
+      "address": "0x204c",
+      "end": "0x206c",
+      "name": "dyld_stub_binding_helper"
+    },
+    {
+      "address": "0x206c",
+      "end": "0x20e0",
+      "name": "_main"
+    },
+    {
+      "address": "0x20e0",
+      "end": "0x20e4",
+      "name": "BpPrimBuffer::~BpPrimBuffer()"
+    },
+    {
+      "address": "0x20e4",
+      "end": "0x20ec",
+      "name": "BpPrimBuffer::NumValidPrims() const"
+    },
+    {
+      "address": "0x20ec",
+      "end": "0x2144",
+      "name": "BpPrimBuffer::BeginPrim(int)"
+    },
+    {
+      "address": "0x2144",
+      "end": "0x2160",
+      "name": "BpPrimBuffer::EndPrim()"
+    },
+    {
+      "address": "0x2160",
+      "end": "0x21ec",
+      "name": "BpPrimBuffer::Lock(BpPrimBuffer::LOCKTYPE, int)"
+    },
+    {
+      "address": "0x21ec",
+      "end": "0x2218",
+      "name": "BpPrimBuffer::Unlock(BpPrimBuffer::LOCKTYPE)"
+    },
+    {
+      "address": "0x2218",
+      "end": "0x2300",
+      "name": "BpPrimBuffer::SetVertex(int, BpPrimBuffer::VERTEX const&)"
+    },
+    {
+      "address": "0x2300",
+      "end": "0x2374",
+      "name": "BpPrimBuffer::Vertex(BpVector const&)"
+    },
+    {
+      "address": "0x2374",
+      "end": "0x23c4",
+      "name": "BpPrimBuffer::Destroy()"
+    },
+    {
+      "address": "0x23c4",
+      "end": "0x2444",
+      "name": "BpPrimBuffer::Create(unsigned int, int, int, int)"
+    },
+    {
+      "address": "0x2444",
+      "end": "0x2458",
+      "name": "BpPrimBuffer::BpPrimBuffer()"
+    },
+    {
+      "address": "0x2458",
+      "end": "0x2468",
+      "name": "BpRaster::Color(BpColor const&)"
+    },
+    {
+      "address": "0x2468",
+      "end": "0x2478",
+      "name": "BpRaster::TexCoord(BpVector const&)"
+    },
+    {
+      "address": "0x2478",
+      "end": "0x24ec",
+      "name": "BpRaster::HwFree()"
+    },
+    {
+      "address": "0x24ec",
+      "end": "0x252c",
+      "name": "BpRaster::EndFrame()"
+    },
+    {
+      "address": "0x252c",
+      "end": "0x260c",
+      "name": "BpRaster::HwInit()"
+    },
+    {
+      "address": "0x260c",
+      "end": "0x27c0",
+      "name": "BpRaster::DrawPrimBuffer(BpPrimBuffer const&, int, int)"
+    },
+    {
+      "address": "0x27c0",
+      "end": "0x27d4",
+      "name": "BpRaster::Vertex(BpVector const&)"
+    },
+    {
+      "address": "0x27d4",
+      "end": "0x2820",
+      "name": "BpRaster::EndPrim()"
+    },
+    {
+      "address": "0x2820",
+      "end": "0x2860",
+      "name": "BpRaster::BeginPrim(BpRaster::PRIMTYPE, int)"
+    },
+    {
+      "address": "0x2860",
+      "end": "0x28bc",
+      "name": "BpRaster::SetRenderTarget(BpTexture*)"
+    },
+    {
+      "address": "0x28bc",
+      "end": "0x2940",
+      "name": "BpRaster::Destroy()"
+    },
+    {
+      "address": "0x2940",
+      "end": "0x2aa0",
+      "name": "BpRaster::Create(void*)"
+    },
+    {
+      "address": "0x2aa0",
+      "end": "0x2b24",
+      "name": "BpRaster::SetWorld(BpMatrix const&)"
+    },
+    {
+      "address": "0x2b24",
+      "end": "0x2cac",
+      "name": "BpRaster::StretchBlit(BpTexture const&, BpVector const&, BpVector const&, BpColor const&)"
+    },
+    {
+      "address": "0x2cac",
+      "end": "0x2d68",
+      "name": "BpRaster::BeginFrame()"
+    },
+    {
+      "address": "0x2d68",
+      "end": "0x2dac",
+      "name": "BpRaster::BpRaster()"
+    },
+    {
+      "address": "0x2dac",
+      "end": "0x2db0",
+      "name": "BpRaster::BpRaster()"
+    },
+    {
+      "address": "0x2db0",
+      "end": "0x2df8",
+      "name": "BpMatrix::BpMatrix(BpVector const&, BpVector const&, BpVector const&, BpVector const&)"
+    },
+    {
+      "address": "0x2df8",
+      "end": "0x2e74",
+      "name": "BpMatrix::Identity()"
+    },
+    {
+      "address": "0x2e74",
+      "end": "0x2f84",
+      "name": "BpMatrix::operator*=(BpMatrix const&)"
+    },
+    {
+      "address": "0x2f84",
+      "end": "0x2fac",
+      "name": "BpComputeStride(unsigned int)"
+    },
+    {
+      "address": "0x2fac",
+      "end": "0x2fcc",
+      "name": "BpTexture::BpTexture()"
+    },
+    {
+      "address": "0x2fcc",
+      "end": "0x3008",
+      "name": "BpTexture::ComputeSize() const"
+    },
+    {
+      "address": "0x3008",
+      "end": "0x3044",
+      "name": "BpTexture::Bind() const"
+    },
+    {
+      "address": "0x3044",
+      "end": "0x3074",
+      "name": "BpTexture::~BpTexture()"
+    },
+    {
+      "address": "0x3074",
+      "end": "0x3078",
+      "name": "BpTexture::~BpTexture()"
+    },
+    {
+      "address": "0x3078",
+      "end": "0x31bc",
+      "name": "BpTexture::CreateAsRenderTarget(int, int, BpTexture::FORMAT)"
+    },
+    {
+      "address": "0x31bc",
+      "end": "0x340c",
+      "name": "BpTexture::LoadRaw(char const*, int, int, BpTexture::FORMAT)"
+    },
+    {
+      "address": "0x340c",
+      "end": "0x3484",
+      "name": "BpMatrix::MakeZRotation(float)"
+    },
+    {
+      "address": "0x3484",
+      "end": "0x34bc",
+      "name": "BpMath::RandomFloatN()"
+    },
+    {
+      "address": "0x34bc",
+      "end": "0x34e4",
+      "name": "BpMath::RandomFloat()"
+    },
+    {
+      "address": "0x34e4",
+      "end": "0x34f0",
+      "name": "AppGame::Version() const"
+    },
+    {
+      "address": "0x34f0",
+      "end": "0x368c",
+      "name": "AppGame::AccelerometerUpdate(float, float, float)"
+    },
+    {
+      "address": "0x368c",
+      "end": "0x370c",
+      "name": "AppGame::AddDisplacement(BpVector const&, float, bool, float, bool)"
+    },
+    {
+      "address": "0x370c",
+      "end": "0x371c",
+      "name": "AppGame::CancelSleepTimer()"
+    },
+    {
+      "address": "0x371c",
+      "end": "0x3884",
+      "name": "AppGame::InitializeWaterRendering()"
+    },
+    {
+      "address": "0x3884",
+      "end": "0x3aa8",
+      "name": "AppGame::UpdateWaterTexCoords()"
+    },
+    {
+      "address": "0x3aa8",
+      "end": "0x3cd0",
+      "name": "AppGame::RenderRainDrops()"
+    },
+    {
+      "address": "0x3cd0",
+      "end": "0x3d48",
+      "name": "AppGame::ResetSleepTimer()"
+    },
+    {
+      "address": "0x3d48",
+      "end": "0x3db4",
+      "name": "AppGame::SaveXmasMode()"
+    },
+    {
+      "address": "0x3db4",
+      "end": "0x3fe0",
+      "name": "AppGame::Simulate()"
+    },
+    {
+      "address": "0x3fe0",
+      "end": "0x4200",
+      "name": "AppGame::UpdateRain(float)"
+    },
+    {
+      "address": "0x4200",
+      "end": "0x44fc",
+      "name": "AppGame::RenderWaterBedAndSurface()"
+    },
+    {
+      "address": "0x44fc",
+      "end": "0x4990",
+      "name": "AppGame::UpdateOptions()"
+    },
+    {
+      "address": "0x4990",
+      "end": "0x4a74",
+      "name": "AppGame::PlayRandomNibble()"
+    },
+    {
+      "address": "0x4a74",
+      "end": "0x4b44",
+      "name": "AppGame::PlayRandomThunder()"
+    },
+    {
+      "address": "0x4b44",
+      "end": "0x4bec",
+      "name": "AppGame::PlayRandomFrog()"
+    },
+    {
+      "address": "0x4bec",
+      "end": "0x4ce8",
+      "name": "AppGame::PlayRandomBird()"
+    },
+    {
+      "address": "0x4ce8",
+      "end": "0x4d98",
+      "name": "AppGame::PlayRandomWater(float, float)"
+    },
+    {
+      "address": "0x4d98",
+      "end": "0x4ec8",
+      "name": "AppGame::PlayRandomSplash(bool, float, float)"
+    },
+    {
+      "address": "0x4ec8",
+      "end": "0x4fac",
+      "name": "AppGame::CheckFlee(BpVector const&, float)"
+    },
+    {
+      "address": "0x4fac",
+      "end": "0x5128",
+      "name": "AppGame::Displace(BpVector const&, float)"
+    },
+    {
+      "address": "0x5128",
+      "end": "0x5194",
+      "name": "AppGame::ToggleXmasModeRequested()"
+    },
+    {
+      "address": "0x5194",
+      "end": "0x5234",
+      "name": "AppGame::EatFood(AppKoi*, int)"
+    },
+    {
+      "address": "0x5234",
+      "end": "0x5360",
+      "name": "AppGame::SaveDefaultPlants()"
+    },
+    {
+      "address": "0x5360",
+      "end": "0x53c4",
+      "name": "AppGame::OnTouchUp(unsigned int, BpVector const&)"
+    },
+    {
+      "address": "0x53c4",
+      "end": "0x5604",
+      "name": "AppGame::Destroy()"
+    },
+    {
+      "address": "0x5604",
+      "end": "0x5664",
+      "name": "AppGame::~AppGame()"
+    },
+    {
+      "address": "0x5664",
+      "end": "0x5668",
+      "name": "AppGame::~AppGame()"
+    },
+    {
+      "address": "0x5668",
+      "end": "0x5bcc",
+      "name": "AppGame::OnTouchDown(unsigned int, BpVector const&)"
+    },
+    {
+      "address": "0x5bcc",
+      "end": "0x5dd0",
+      "name": "AppGame::OnTouchMove(unsigned int, BpVector const&)"
+    },
+    {
+      "address": "0x5dd0",
+      "end": "0x5fb8",
+      "name": "AppGame::AppGame()"
+    },
+    {
+      "address": "0x5fb8",
+      "end": "0x5fbc",
+      "name": "AppGame::AppGame()"
+    },
+    {
+      "address": "0x5fbc",
+      "end": "0x6370",
+      "name": "AppGame::DrawFood(bool)"
+    },
+    {
+      "address": "0x6370",
+      "end": "0x675c",
+      "name": "AppGame::DrawPlants(bool)"
+    },
+    {
+      "address": "0x675c",
+      "end": "0x6838",
+      "name": "AppGame::PlayRandomFeed()"
+    },
+    {
+      "address": "0x6838",
+      "end": "0x7ce0",
+      "name": "AppGame::Create(void*)"
+    },
+    {
+      "address": "0x7ce0",
+      "end": "0x7fcc",
+      "name": "AppGame::AddFood()"
+    },
+    {
+      "address": "0x7fcc",
+      "end": "0x9bd8",
+      "name": "AppGame::Update(float)"
+    },
+    {
+      "address": "0x9bd8",
+      "end": "0x9c00",
+      "name": "BpVector::DistanceSquared2(BpVector const&, BpVector const&)"
+    },
+    {
+      "address": "0x9c00",
+      "end": "0x9c3c",
+      "name": "AppGame::DISPLACEMENT::DISPLACEMENT()"
+    },
+    {
+      "address": "0x9c3c",
+      "end": "0x9c64",
+      "name": "std::list<AppGame::RAINDROP, std::allocator<AppGame::RAINDROP>>::erase(std::_List_iterator<AppGame::RAINDROP>)"
+    },
+    {
+      "address": "0x9c64",
+      "end": "0x9c90",
+      "name": "std::_List_base<AppGame::RAINDROP, std::allocator<AppGame::RAINDROP>>::_M_clear()"
+    },
+    {
+      "address": "0x9c90",
+      "end": "0x9cb0",
+      "name": "__gnu_cxx::new_allocator<std::_List_node<AppGame::RAINDROP>>::allocate(unsigned long, void const*)"
+    },
+    {
+      "address": "0x9cb0",
+      "end": "0x9cec",
+      "name": "std::list<AppGame::RAINDROP, std::allocator<AppGame::RAINDROP>>::_M_create_node(AppGame::RAINDROP const&)"
+    },
+    {
+      "address": "0x9cec",
+      "end": "0x9d08",
+      "name": "std::list<AppGame::RAINDROP, std::allocator<AppGame::RAINDROP>>::push_back(AppGame::RAINDROP const&)"
+    },
+    {
+      "address": "0x9d08",
+      "end": "0x9d34",
+      "name": "BpVector::Distance2(BpVector const&, BpVector const&)"
+    },
+    {
+      "address": "0x9d34",
+      "end": "0x9dfc",
+      "name": "AppKoi::~AppKoi()"
+    },
+    {
+      "address": "0x9dfc",
+      "end": "0x9ec8",
+      "name": "AppKoi::AppKoi()"
+    },
+    {
+      "address": "0x9ec8",
+      "end": "0x9f00",
+      "name": "AppKoi::SetGoal(BpVector const&, float)"
+    },
+    {
+      "address": "0x9f00",
+      "end": "0x9f14",
+      "name": "AppKoi::FleeTo(BpVector const&, float)"
+    },
+    {
+      "address": "0x9f14",
+      "end": "0x9f1c",
+      "name": "AppKoi::AllowedToNibble() const"
+    },
+    {
+      "address": "0x9f1c",
+      "end": "0xa098",
+      "name": "AppKoi::CancelNibble()"
+    },
+    {
+      "address": "0xa098",
+      "end": "0xa0f4",
+      "name": "AppKoi::Destroy()"
+    },
+    {
+      "address": "0xa0f4",
+      "end": "0xa1a8",
+      "name": "AppKoi::FoodIsGone(int)"
+    },
+    {
+      "address": "0xa1a8",
+      "end": "0xa200",
+      "name": "AppKoi::TryToNibble(BpVector const&)"
+    },
+    {
+      "address": "0xa200",
+      "end": "0xa4c0",
+      "name": "AppKoi::Render(BpRaster&, bool)"
+    },
+    {
+      "address": "0xa4c0",
+      "end": "0xa6e8",
+      "name": "AppKoi::CheckForFood()"
+    },
+    {
+      "address": "0xa6e8",
+      "end": "0xa834",
+      "name": "AppKoi::SteerAroundFish(float)"
+    },
+    {
+      "address": "0xa834",
+      "end": "0xa96c",
+      "name": "AppKoi::SetDefaults()"
+    },
+    {
+      "address": "0xa96c",
+      "end": "0xadf4",
+      "name": "AppKoi::UpdatePosition(float)"
+    },
+    {
+      "address": "0xadf4",
+      "end": "0xb560",
+      "name": "AppKoi::Update(float)"
+    },
+    {
+      "address": "0xb560",
+      "end": "0xb9cc",
+      "name": "AppKoi::RefreshTextures(int)"
+    },
+    {
+      "address": "0xb9cc",
+      "end": "0xc2dc",
+      "name": "AppKoi::InitPrimBuffer(BpPrimBuffer*, BpColor const&)"
+    },
+    {
+      "address": "0xc2dc",
+      "end": "0xc44c",
+      "name": "AppKoi::Create(int)"
+    },
+    {
+      "address": "0xc44c",
+      "end": "0xc4cc",
+      "name": "operator*=(BpVector&, BpMatrix const&)"
+    },
+    {
+      "address": "0xc4cc",
+      "end": "0xc4d0",
+      "name": "-[AppOptionsImageView touchesBegan:withEvent:]"
+    },
+    {
+      "address": "0xc4d0",
+      "end": "0xc4e4",
+      "name": "-[AppOptionsView waterSelection]"
+    },
+    {
+      "address": "0xc4e4",
+      "end": "0xc4f8",
+      "name": "-[AppOptionsView fishSelection]"
+    },
+    {
+      "address": "0xc4f8",
+      "end": "0xc50c",
+      "name": "-[AppOptionsView plantSelection]"
+    },
+    {
+      "address": "0xc50c",
+      "end": "0xc520",
+      "name": "-[AppOptionsView birdSoundOn]"
+    },
+    {
+      "address": "0xc520",
+      "end": "0xc534",
+      "name": "-[AppOptionsView windSoundOn]"
+    },
+    {
+      "address": "0xc534",
+      "end": "0xc548",
+      "name": "-[AppOptionsView frogSoundOn]"
+    },
+    {
+      "address": "0xc548",
+      "end": "0xc55c",
+      "name": "-[AppOptionsView insectSoundOn]"
+    },
+    {
+      "address": "0xc55c",
+      "end": "0xc570",
+      "name": "-[AppOptionsView brightOn]"
+    },
+    {
+      "address": "0xc570",
+      "end": "0xc584",
+      "name": "-[AppOptionsView vibrateOn]"
+    },
+    {
+      "address": "0xc584",
+      "end": "0xc598",
+      "name": "-[AppOptionsView rainOn]"
+    },
+    {
+      "address": "0xc598",
+      "end": "0xc5ac",
+      "name": "-[AppOptionsView bedType]"
+    },
+    {
+      "address": "0xc5ac",
+      "end": "0xc5f0",
+      "name": "-[AppOptionsView sleepTimerMinutes]"
+    },
+    {
+      "address": "0xc5f0",
+      "end": "0xc608",
+      "name": "-[AppOptionsView soundVolume]"
+    },
+    {
+      "address": "0xc608",
+      "end": "0xc60c",
+      "name": "-[AppOptionsView touchesBegan:withEvent:]"
+    },
+    {
+      "address": "0xc60c",
+      "end": "0xc610",
+      "name": "-[AppOptionsView touchesMoved:withEvent:]"
+    },
+    {
+      "address": "0xc610",
+      "end": "0xc614",
+      "name": "-[AppOptionsView touchesEnded:withEvent:]"
+    },
+    {
+      "address": "0xc614",
+      "end": "0xcd84",
+      "name": "-[AppOptionsView updateImagesAndDefaults]"
+    },
+    {
+      "address": "0xcd84",
+      "end": "0xcea8",
+      "name": "-[AppOptionsView onSleepTimerSliderChanged:]"
+    },
+    {
+      "address": "0xcea8",
+      "end": "0xced8",
+      "name": "-[AppOptionsView selectTileBed:]"
+    },
+    {
+      "address": "0xced8",
+      "end": "0xcf08",
+      "name": "-[AppOptionsView selectRockBed:]"
+    },
+    {
+      "address": "0xcf08",
+      "end": "0xcf40",
+      "name": "-[AppOptionsView selectVibrate:]"
+    },
+    {
+      "address": "0xcf40",
+      "end": "0xcf78",
+      "name": "-[AppOptionsView selectBright:]"
+    },
+    {
+      "address": "0xcf78",
+      "end": "0xcfb0",
+      "name": "-[AppOptionsView selectRain:]"
+    },
+    {
+      "address": "0xcfb0",
+      "end": "0xcfe8",
+      "name": "-[AppOptionsView selectInsectSound:]"
+    },
+    {
+      "address": "0xcfe8",
+      "end": "0xd020",
+      "name": "-[AppOptionsView selectFrogSound:]"
+    },
+    {
+      "address": "0xd020",
+      "end": "0xd058",
+      "name": "-[AppOptionsView selectWindSound:]"
+    },
+    {
+      "address": "0xd058",
+      "end": "0xd090",
+      "name": "-[AppOptionsView selectBirdSound:]"
+    },
+    {
+      "address": "0xd090",
+      "end": "0xd0c0",
+      "name": "-[AppOptionsView selectPlant3:]"
+    },
+    {
+      "address": "0xd0c0",
+      "end": "0xd0f0",
+      "name": "-[AppOptionsView selectPlant2:]"
+    },
+    {
+      "address": "0xd0f0",
+      "end": "0xd120",
+      "name": "-[AppOptionsView selectPlant1:]"
+    },
+    {
+      "address": "0xd120",
+      "end": "0xd150",
+      "name": "-[AppOptionsView selectPlant0:]"
+    },
+    {
+      "address": "0xd150",
+      "end": "0xd180",
+      "name": "-[AppOptionsView selectFish3:]"
+    },
+    {
+      "address": "0xd180",
+      "end": "0xd1b0",
+      "name": "-[AppOptionsView selectFish2:]"
+    },
+    {
+      "address": "0xd1b0",
+      "end": "0xd1e0",
+      "name": "-[AppOptionsView selectFish1:]"
+    },
+    {
+      "address": "0xd1e0",
+      "end": "0xd210",
+      "name": "-[AppOptionsView selectFish0:]"
+    },
+    {
+      "address": "0xd210",
+      "end": "0xd240",
+      "name": "-[AppOptionsView selectWater3:]"
+    },
+    {
+      "address": "0xd240",
+      "end": "0xd270",
+      "name": "-[AppOptionsView selectWater2:]"
+    },
+    {
+      "address": "0xd270",
+      "end": "0xd2a0",
+      "name": "-[AppOptionsView selectWater1:]"
+    },
+    {
+      "address": "0xd2a0",
+      "end": "0xd2d0",
+      "name": "-[AppOptionsView selectWater0:]"
+    },
+    {
+      "address": "0xd2d0",
+      "end": "0xd6f4",
+      "name": "-[AppOptionsView awakeFromNib]"
+    },
+    {
+      "address": "0xd6f4",
+      "end": "0xd9cc",
+      "name": "-[AppOptionsView saveDefaults]"
+    },
+    {
+      "address": "0xd9cc",
+      "end": "0xda3c",
+      "name": "-[AppOptionsView onSoundSliderChanged:]"
+    },
+    {
+      "address": "0xda3c",
+      "end": "0xda50",
+      "name": "-[EAGLView inputListener]"
+    },
+    {
+      "address": "0xda50",
+      "end": "0xda64",
+      "name": "-[EAGLView setInputListener:]"
+    },
+    {
+      "address": "0xda64",
+      "end": "0xdaa0",
+      "name": "-[EAGLView dealloc]"
+    },
+    {
+      "address": "0xdaa0",
+      "end": "0xdbe0",
+      "name": "-[EAGLView initWithCoder:]"
+    },
+    {
+      "address": "0xdbe0",
+      "end": "0xdc08",
+      "name": "+[EAGLView layerClass]"
+    },
+    {
+      "address": "0xdc08",
+      "end": "0xdda8",
+      "name": "-[EAGLView touchesMoved:withEvent:]"
+    },
+    {
+      "address": "0xdda8",
+      "end": "0xdf04",
+      "name": "-[EAGLView touchesBegan:withEvent:]"
+    },
+    {
+      "address": "0xdf04",
+      "end": "0xe060",
+      "name": "-[EAGLView touchesCancelled:withEvent:]"
+    },
+    {
+      "address": "0xe060",
+      "end": "0xe1bc",
+      "name": "-[EAGLView touchesEnded:withEvent:]"
+    },
+    {
+      "address": "0xe1bc",
+      "end": "0xe1c0",
+      "name": "AudioInterruptListener(void*, unsigned long)"
+    },
+    {
+      "address": "0xe1c0",
+      "end": "0xe1d4",
+      "name": "-[KoiPondAppDelegate xmasButton]"
+    },
+    {
+      "address": "0xe1d4",
+      "end": "0xe1e8",
+      "name": "-[KoiPondAppDelegate helpView]"
+    },
+    {
+      "address": "0xe1e8",
+      "end": "0xe1fc",
+      "name": "-[KoiPondAppDelegate drawerView]"
+    },
+    {
+      "address": "0xe1fc",
+      "end": "0xe210",
+      "name": "-[KoiPondAppDelegate optionsView]"
+    },
+    {
+      "address": "0xe210",
+      "end": "0xe224",
+      "name": "-[KoiPondAppDelegate helpButton]"
+    },
+    {
+      "address": "0xe224",
+      "end": "0xe238",
+      "name": "-[KoiPondAppDelegate optionsButton]"
+    },
+    {
+      "address": "0xe238",
+      "end": "0xe24c",
+      "name": "-[KoiPondAppDelegate glView]"
+    },
+    {
+      "address": "0xe24c",
+      "end": "0xe260",
+      "name": "-[KoiPondAppDelegate rootController]"
+    },
+    {
+      "address": "0xe260",
+      "end": "0xe274",
+      "name": "-[KoiPondAppDelegate window]"
+    },
+    {
+      "address": "0xe274",
+      "end": "0xe2a4",
+      "name": "-[KoiPondAppDelegate closeHelp:]"
+    },
+    {
+      "address": "0xe2a4",
+      "end": "0xe354",
+      "name": "-[KoiPondAppDelegate applicationDidBecomeActive:]"
+    },
+    {
+      "address": "0xe354",
+      "end": "0xe404",
+      "name": "-[KoiPondAppDelegate applicationWillResignActive:]"
+    },
+    {
+      "address": "0xe404",
+      "end": "0xe7f0",
+      "name": "-[KoiPondAppDelegate applicationDidFinishLaunching:]"
+    },
+    {
+      "address": "0xe7f0",
+      "end": "0xea9c",
+      "name": "-[KoiPondAppDelegate updateGame]"
+    },
+    {
+      "address": "0xea9c",
+      "end": "0xeb34",
+      "name": "-[KoiPondAppDelegate accelerometer:didAccelerate:]"
+    },
+    {
+      "address": "0xeb34",
+      "end": "0xebd8",
+      "name": "-[KoiPondAppDelegate onOptionsSelected:]"
+    },
+    {
+      "address": "0xebd8",
+      "end": "0xec20",
+      "name": "-[KoiPondAppDelegate onHelpSelected:]"
+    },
+    {
+      "address": "0xec20",
+      "end": "0xec40",
+      "name": "-[KoiPondAppDelegate onXmasSelected:]"
+    },
+    {
+      "address": "0xec40",
+      "end": "0xecf8",
+      "name": "-[KoiPondAppDelegate dealloc]"
+    },
+    {
+      "address": "0xecf8",
+      "end": "0xed2c",
+      "name": "-[KoiPondAppDelegate setWindow:]"
+    },
+    {
+      "address": "0xed2c",
+      "end": "0xed60",
+      "name": "-[KoiPondAppDelegate setRootController:]"
+    },
+    {
+      "address": "0xed60",
+      "end": "0xed94",
+      "name": "-[KoiPondAppDelegate setGlView:]"
+    },
+    {
+      "address": "0xed94",
+      "end": "0xedc8",
+      "name": "-[KoiPondAppDelegate setOptionsButton:]"
+    },
+    {
+      "address": "0xedc8",
+      "end": "0xedfc",
+      "name": "-[KoiPondAppDelegate setHelpButton:]"
+    },
+    {
+      "address": "0xedfc",
+      "end": "0xee30",
+      "name": "-[KoiPondAppDelegate setOptionsView:]"
+    },
+    {
+      "address": "0xee30",
+      "end": "0xee64",
+      "name": "-[KoiPondAppDelegate setDrawerView:]"
+    },
+    {
+      "address": "0xee64",
+      "end": "0xee98",
+      "name": "-[KoiPondAppDelegate setHelpView:]"
+    },
+    {
+      "address": "0xee98",
+      "end": "0xeecc",
+      "name": "-[KoiPondAppDelegate setXmasButton:]"
+    },
+    {
+      "address": "0xeecc",
+      "end": "0xef64",
+      "name": "CalculateBytesForTime(AudioStreamBasicDescription&, unsigned long, double, unsigned long*, unsigned long*)"
+    },
+    {
+      "address": "0xef64",
+      "end": "0xf110",
+      "name": "FormatIsEqual(AudioStreamBasicDescription, AudioStreamBasicDescription)"
+    },
+    {
+      "address": "0xf110",
+      "end": "0xf158",
+      "name": "_SoundEngine_SetListenerPosition"
+    },
+    {
+      "address": "0xf158",
+      "end": "0xf1e0",
+      "name": "OpenFile(char const*, OpaqueAudioFileID*&)"
+    },
+    {
+      "address": "0xf1e0",
+      "end": "0xf298",
+      "name": "LoadFileDataInfo(char const*, OpaqueAudioFileID*&, AudioStreamBasicDescription&, unsigned long long&)"
+    },
+    {
+      "address": "0xf298",
+      "end": "0xf2e8",
+      "name": "alcMacOSXMixerOutputRateProc(double)"
+    },
+    {
+      "address": "0xf2e8",
+      "end": "0xf360",
+      "name": "alBufferDataStaticProc(int, int, void*, int, int)"
+    },
+    {
+      "address": "0xf360",
+      "end": "0xf48c",
+      "name": "_SoundEngine_LoadLoopingEffect"
+    },
+    {
+      "address": "0xf48c",
+      "end": "0xf5a4",
+      "name": "_SoundEngine_LoadEffect"
+    },
+    {
+      "address": "0xf5a4",
+      "end": "0xf5f0",
+      "name": "_SoundEngine_SetEffectPosition"
+    },
+    {
+      "address": "0xf5f0",
+      "end": "0xf624",
+      "name": "_SoundEngine_SetEffectLevel"
+    },
+    {
+      "address": "0xf624",
+      "end": "0xf658",
+      "name": "_SoundEngine_SetEffectPitch"
+    },
+    {
+      "address": "0xf658",
+      "end": "0xf68c",
+      "name": "_SoundEngine_StopEffect"
+    },
+    {
+      "address": "0xf68c",
+      "end": "0xf6b8",
+      "name": "_SoundEngine_StartEffect"
+    },
+    {
+      "address": "0xf6b8",
+      "end": "0xf6e4",
+      "name": "_SoundEngine_SetEffectsVolume"
+    },
+    {
+      "address": "0xf6e4",
+      "end": "0xf83c",
+      "name": "_SoundEngine_Initialize"
+    },
+    {
+      "address": "0xf83c",
+      "end": "0xf8a4",
+      "name": "_SoundEngine_Teardown"
+    },
+    {
+      "address": "0xf8a4",
+      "end": "0xf8fc",
+      "name": "BackgroundTrackMgr::BackgroundTrackMgr()"
+    },
+    {
+      "address": "0xf8fc",
+      "end": "0xf9bc",
+      "name": "BackgroundTrackMgr::GetQueueStateForNextBuffer(BackgroundTrackMgr::BG_FileInfo*, BackgroundTrackMgr::BG_FileInfo*)"
+    },
+    {
+      "address": "0xf9bc",
+      "end": "0xfa40",
+      "name": "SoundEngineEffect::GetALFormat(AudioStreamBasicDescription)"
+    },
+    {
+      "address": "0xfa40",
+      "end": "0xfa50",
+      "name": "std::vector<BackgroundTrackMgr::BG_FileInfo*, std::allocator<BackgroundTrackMgr::BG_FileInfo*>>::size() const"
+    },
+    {
+      "address": "0xfa50",
+      "end": "0xfa60",
+      "name": "std::vector<AudioQueueBuffer*, std::allocator<AudioQueueBuffer*>>::size() const"
+    },
+    {
+      "address": "0xfa60",
+      "end": "0xfa94",
+      "name": "std::_Rb_tree<unsigned long, std::pair<unsigned long const, SoundEngineEffect*>, std::_Select1st<std::pair<unsigned long const, SoundEngineEffect*>>, std::less<unsigned int>, std::allocator<std::pair<unsigned long const, SoundEngineEffect*>>>::upper_bound(unsigned long const&)"
+    },
+    {
+      "address": "0xfa94",
+      "end": "0xfaf0",
+      "name": "std::_Rb_tree<unsigned long, std::pair<unsigned long const, SoundEngineEffect*>, std::_Select1st<std::pair<unsigned long const, SoundEngineEffect*>>, std::less<unsigned int>, std::allocator<std::pair<unsigned long const, SoundEngineEffect*>>>::find(unsigned long const&)"
+    },
+    {
+      "address": "0xfaf0",
+      "end": "0xfb2c",
+      "name": "std::_Rb_tree<unsigned long, std::pair<unsigned long const, SoundEngineEffect*>, std::_Select1st<std::pair<unsigned long const, SoundEngineEffect*>>, std::less<unsigned int>, std::allocator<std::pair<unsigned long const, SoundEngineEffect*>>>::_Rb_tree_impl<std::less<unsigned int>, false>::_Rb_tree_impl(std::allocator<std::_Rb_tree_node<std::pair<unsigned long const, SoundEngineEffect*>>> const&, std::less<unsigned int> const&)"
+    },
+    {
+      "address": "0xfb2c",
+      "end": "0xfb68",
+      "name": "SoundEngineEffect::SetPosition(float, float, float)"
+    },
+    {
+      "address": "0xfb68",
+      "end": "0xfb94",
+      "name": "SoundEngineEffect::SetLooping(unsigned char)"
+    },
+    {
+      "address": "0xfb94",
+      "end": "0xfc1c",
+      "name": "SoundEngineEffect::StartDecay()"
+    },
+    {
+      "address": "0xfc1c",
+      "end": "0xfc80",
+      "name": "SoundEngineEffect::Stop(unsigned char)"
+    },
+    {
+      "address": "0xfc80",
+      "end": "0xfcbc",
+      "name": "std::_Rb_tree<unsigned long, std::pair<unsigned long const, SoundEngineEffect*>, std::_Select1st<std::pair<unsigned long const, SoundEngineEffect*>>, std::less<unsigned int>, std::allocator<std::pair<unsigned long const, SoundEngineEffect*>>>::_M_erase(std::_Rb_tree_node<std::pair<unsigned long const, SoundEngineEffect*>>*)"
+    },
+    {
+      "address": "0xfcbc",
+      "end": "0xfcd8",
+      "name": "std::_Vector_base<AudioQueueBuffer*, std::allocator<AudioQueueBuffer*>>::~_Vector_base()"
+    },
+    {
+      "address": "0xfcd8",
+      "end": "0xfcec",
+      "name": "std::vector<AudioQueueBuffer*, std::allocator<AudioQueueBuffer*>>::~vector()"
+    },
+    {
+      "address": "0xfcec",
+      "end": "0xfd08",
+      "name": "std::_Vector_base<BackgroundTrackMgr::BG_FileInfo*, std::allocator<BackgroundTrackMgr::BG_FileInfo*>>::~_Vector_base()"
+    },
+    {
+      "address": "0xfd08",
+      "end": "0xfd1c",
+      "name": "std::vector<BackgroundTrackMgr::BG_FileInfo*, std::allocator<BackgroundTrackMgr::BG_FileInfo*>>::~vector()"
+    },
+    {
+      "address": "0xfd1c",
+      "end": "0xfd70",
+      "name": "OpenALObject::OpenALObject(float)"
+    },
+    {
+      "address": "0xfd70",
+      "end": "0xfe80",
+      "name": "OpenALThread::getScheduledPriority(_opaque_pthread_t*, int)"
+    },
+    {
+      "address": "0xfe80",
+      "end": "0xfed4",
+      "name": "OpenALThread::OpenALThread(void* (*)(void*), void*)"
+    },
+    {
+      "address": "0xfed4",
+      "end": "0xff68",
+      "name": "SoundEngineEffect::ClearSourceBuffers()"
+    },
+    {
+      "address": "0xff68",
+      "end": "0x1001c",
+      "name": "OpenALThread::Start()"
+    },
+    {
+      "address": "0x1001c",
+      "end": "0x10260",
+      "name": "SoundEngineEffect::Start()"
+    },
+    {
+      "address": "0x10260",
+      "end": "0x10308",
+      "name": "OpenALThread::SetPriority(unsigned long, bool)"
+    },
+    {
+      "address": "0x10308",
+      "end": "0x10360",
+      "name": "OpenALThread::Entry(OpenALThread*)"
+    },
+    {
+      "address": "0x10360",
+      "end": "0x10390",
+      "name": "std::_Rb_tree<unsigned long, std::pair<unsigned long const, SoundEngineEffect*>, std::_Select1st<std::pair<unsigned long const, SoundEngineEffect*>>, std::less<unsigned int>, std::allocator<std::pair<unsigned long const, SoundEngineEffect*>>>::erase(std::_Rb_tree_iterator<std::pair<unsigned long const, SoundEngineEffect*>>)"
+    },
+    {
+      "address": "0x10390",
+      "end": "0x103f4",
+      "name": "SoundEngineEffect::SoundEngineEffect(char const*, char const*, char const*, unsigned char)"
+    },
+    {
+      "address": "0x103f4",
+      "end": "0x10420",
+      "name": "__gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<unsigned long const, SoundEngineEffect*>>>::allocate(unsigned long, void const*)"
+    },
+    {
+      "address": "0x10420",
+      "end": "0x10450",
+      "name": "std::_Rb_tree<unsigned long, std::pair<unsigned long const, SoundEngineEffect*>, std::_Select1st<std::pair<unsigned long const, SoundEngineEffect*>>, std::less<unsigned int>, std::allocator<std::pair<unsigned long const, SoundEngineEffect*>>>::_M_create_node(std::pair<unsigned long const, SoundEngineEffect*> const&)"
+    },
+    {
+      "address": "0x10450",
+      "end": "0x104d4",
+      "name": "std::_Rb_tree<unsigned long, std::pair<unsigned long const, SoundEngineEffect*>, std::_Select1st<std::pair<unsigned long const, SoundEngineEffect*>>, std::less<unsigned int>, std::allocator<std::pair<unsigned long const, SoundEngineEffect*>>>::_M_insert_lower(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::pair<unsigned long const, SoundEngineEffect*> const&)"
+    },
+    {
+      "address": "0x104d4",
+      "end": "0x10518",
+      "name": "std::_Rb_tree<unsigned long, std::pair<unsigned long const, SoundEngineEffect*>, std::_Select1st<std::pair<unsigned long const, SoundEngineEffect*>>, std::less<unsigned int>, std::allocator<std::pair<unsigned long const, SoundEngineEffect*>>>::_M_insert_equal_lower(std::pair<unsigned long const, SoundEngineEffect*> const&)"
+    },
+    {
+      "address": "0x10518",
+      "end": "0x1059c",
+      "name": "std::_Rb_tree<unsigned long, std::pair<unsigned long const, SoundEngineEffect*>, std::_Select1st<std::pair<unsigned long const, SoundEngineEffect*>>, std::less<unsigned int>, std::allocator<std::pair<unsigned long const, SoundEngineEffect*>>>::_M_insert(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::pair<unsigned long const, SoundEngineEffect*> const&)"
+    },
+    {
+      "address": "0x1059c",
+      "end": "0x105e0",
+      "name": "std::_Rb_tree<unsigned long, std::pair<unsigned long const, SoundEngineEffect*>, std::_Select1st<std::pair<unsigned long const, SoundEngineEffect*>>, std::less<unsigned int>, std::allocator<std::pair<unsigned long const, SoundEngineEffect*>>>::_M_insert_equal(std::pair<unsigned long const, SoundEngineEffect*> const&)"
+    },
+    {
+      "address": "0x105e0",
+      "end": "0x10600",
+      "name": "__gnu_cxx::new_allocator<AudioQueueBuffer*>::allocate(unsigned long, void const*)"
+    },
+    {
+      "address": "0x10600",
+      "end": "0x106d8",
+      "name": "std::_Vector_base<AudioQueueBuffer*, std::allocator<AudioQueueBuffer*>>::_Vector_base(unsigned long, std::allocator<AudioQueueBuffer*> const&)"
+    },
+    {
+      "address": "0x106d8",
+      "end": "0x10724",
+      "name": "BackgroundTrackMgr::Start()"
+    },
+    {
+      "address": "0x10724",
+      "end": "0x10790",
+      "name": "BackgroundTrackMgr::Teardown()"
+    },
+    {
+      "address": "0x10790",
+      "end": "0x10858",
+      "name": "BackgroundTrackMgr::~BackgroundTrackMgr()"
+    },
+    {
+      "address": "0x10858",
+      "end": "0x10884",
+      "name": "AudioQueueBuffer** std::__copy<true, std::random_access_iterator_tag>::copy<AudioQueueBuffer*>(AudioQueueBuffer* const*, AudioQueueBuffer* const*, AudioQueueBuffer**)"
+    },
+    {
+      "address": "0x10884",
+      "end": "0x10894",
+      "name": "AudioQueueBuffer** std::uninitialized_copy<AudioQueueBuffer**, AudioQueueBuffer**>(AudioQueueBuffer**, AudioQueueBuffer**, AudioQueueBuffer**)"
+    },
+    {
+      "address": "0x10894",
+      "end": "0x108a4",
+      "name": "AudioQueueBuffer** std::uninitialized_copy<__gnu_cxx::__normal_iterator<AudioQueueBuffer* const*, std::vector<AudioQueueBuffer*, std::allocator<AudioQueueBuffer*>>>, AudioQueueBuffer**>(__gnu_cxx::__normal_iterator<AudioQueueBuffer* const*, std::vector<AudioQueueBuffer*, std::allocator<AudioQueueBuffer*>>>, __gnu_cxx::__normal_iterator<AudioQueueBuffer* const*, std::vector<AudioQueueBuffer*, std::allocator<AudioQueueBuffer*>>>, AudioQueueBuffer**)"
+    },
+    {
+      "address": "0x108a4",
+      "end": "0x108e4",
+      "name": "std::vector<AudioQueueBuffer*, std::allocator<AudioQueueBuffer*>>::vector(std::vector<AudioQueueBuffer*, std::allocator<AudioQueueBuffer*>> const&)"
+    },
+    {
+      "address": "0x108e4",
+      "end": "0x10914",
+      "name": "AudioQueueBuffer** std::__copy_backward<true, std::random_access_iterator_tag>::__copy_b<AudioQueueBuffer*>(AudioQueueBuffer* const*, AudioQueueBuffer* const*, AudioQueueBuffer**)"
+    },
+    {
+      "address": "0x10914",
+      "end": "0x109e4",
+      "name": "BackgroundTrackMgr::AttachNewCookie(OpaqueAudioQueue*, BackgroundTrackMgr::BG_FileInfo*)"
+    },
+    {
+      "address": "0x109e4",
+      "end": "0x10a50",
+      "name": "BackgroundTrackMgr::DisposeBuffer(OpaqueAudioQueue*, std::vector<AudioQueueBuffer*, std::allocator<AudioQueueBuffer*>>, AudioQueueBuffer*)"
+    },
+    {
+      "address": "0x10a50",
+      "end": "0x10a9c",
+      "name": "SoundEngineEffect::~SoundEngineEffect()"
+    },
+    {
+      "address": "0x10a9c",
+      "end": "0x10b68",
+      "name": "OpenALObject::Initialize()"
+    },
+    {
+      "address": "0x10b68",
+      "end": "0x10d28",
+      "name": "SoundEngineEffect::LoadFileData(char const*, void*&, unsigned long&, unsigned int&)"
+    },
+    {
+      "address": "0x10d28",
+      "end": "0x10e38",
+      "name": "SoundEngineEffect::AttachFilesToSource()"
+    },
+    {
+      "address": "0x10e38",
+      "end": "0x10f00",
+      "name": "SoundEngineEffect::PlaybackProc(void*)"
+    },
+    {
+      "address": "0x10f00",
+      "end": "0x10ffc",
+      "name": "std::vector<AudioQueueBuffer*, std::allocator<AudioQueueBuffer*>>::_M_insert_aux(__gnu_cxx::__normal_iterator<AudioQueueBuffer**, std::vector<AudioQueueBuffer*, std::allocator<AudioQueueBuffer*>>>, AudioQueueBuffer* const&)"
+    },
+    {
+      "address": "0x10ffc",
+      "end": "0x11038",
+      "name": "std::vector<AudioQueueBuffer*, std::allocator<AudioQueueBuffer*>>::push_back(AudioQueueBuffer* const&)"
+    },
+    {
+      "address": "0x11038",
+      "end": "0x114b0",
+      "name": "BackgroundTrackMgr::QueueCallback(void*, OpaqueAudioQueue*, AudioQueueBuffer*)"
+    },
+    {
+      "address": "0x114b0",
+      "end": "0x11694",
+      "name": "BackgroundTrackMgr::SetupBuffers(BackgroundTrackMgr::BG_FileInfo*)"
+    },
+    {
+      "address": "0x11694",
+      "end": "0x117b0",
+      "name": "std::_Rb_tree<unsigned long, std::pair<unsigned long const, SoundEngineEffect*>, std::_Select1st<std::pair<unsigned long const, SoundEngineEffect*>>, std::less<unsigned int>, std::allocator<std::pair<unsigned long const, SoundEngineEffect*>>>::_M_insert_equal(std::_Rb_tree_iterator<std::pair<unsigned long const, SoundEngineEffect*>>, std::pair<unsigned long const, SoundEngineEffect*> const&)"
+    },
+    {
+      "address": "0x117b0",
+      "end": "0x117f8",
+      "name": "SoundEngineEffectMap::Add(unsigned int, SoundEngineEffect**)"
+    },
+    {
+      "address": "0x117f8",
+      "end": "0x1190c",
+      "name": "OpenALObject::LoadLoopingEffect(char const*, char const*, char const*, unsigned long*)"
+    },
+    {
+      "address": "0x1190c",
+      "end": "0x11a1c",
+      "name": "OpenALObject::LoadEffect(char const*, unsigned long*)"
+    },
+    {
+      "address": "0x11a1c",
+      "end": "0x11a5c",
+      "name": "SoundEngineEffectMap::Remove(unsigned int)"
+    },
+    {
+      "address": "0x11a5c",
+      "end": "0x11c84",
+      "name": "BackgroundTrackMgr::SetupQueue(BackgroundTrackMgr::BG_FileInfo*)"
+    },
+    {
+      "address": "0x11c84",
+      "end": "0x11d6c",
+      "name": "BackgroundTrackMgr::QueueStoppedProc(void*, OpaqueAudioQueue*, unsigned long)"
+    },
+    {
+      "address": "0x11d6c",
+      "end": "0x11da8",
+      "name": "SoundEngineEffectMap::Get(unsigned int)"
+    },
+    {
+      "address": "0x11da8",
+      "end": "0x11de0",
+      "name": "OpenALObject::SetEffectPosition(unsigned long, float, float, float)"
+    },
+    {
+      "address": "0x11de0",
+      "end": "0x11e3c",
+      "name": "OpenALObject::SetEffectVolume(unsigned long, float)"
+    },
+    {
+      "address": "0x11e3c",
+      "end": "0x11e78",
+      "name": "OpenALObject::SetEffectPitch(unsigned long, float)"
+    },
+    {
+      "address": "0x11e78",
+      "end": "0x11ea4",
+      "name": "OpenALObject::StopEffect(unsigned long, unsigned char)"
+    },
+    {
+      "address": "0x11ea4",
+      "end": "0x11ec8",
+      "name": "OpenALObject::StartEffect(unsigned long)"
+    },
+    {
+      "address": "0x11ec8",
+      "end": "0x11f18",
+      "name": "SoundEngineEffectMap::GetEffectByIndex(unsigned long)"
+    },
+    {
+      "address": "0x11f18",
+      "end": "0x11f94",
+      "name": "OpenALObject::SetEffectsVolume(float)"
+    },
+    {
+      "address": "0x11f94",
+      "end": "0x120fc",
+      "name": "OpenALObject::Teardown()"
+    },
+    {
+      "address": "0x120fc",
+      "end": "0x121f4",
+      "name": "-[AppHelpView animationAlphaHighDidStop:finished:context:]"
+    },
+    {
+      "address": "0x121f4",
+      "end": "0x122ec",
+      "name": "-[AppHelpView animationAlphaLowDidStop:finished:context:]"
+    },
+    {
+      "address": "0x122ec",
+      "end": "0x1252c",
+      "name": "-[AppHelpView setVisible:]"
+    },
+    {
+      "address": "0x1252c",
+      "end": "0x12544",
+      "name": "-[AppNewsView awakeFromNib]"
+    },
+    {
+      "address": "0x12544",
+      "end": "0x126dc",
+      "name": "-[AppNewsView webView:didFailLoadWithError:]"
+    },
+    {
+      "address": "0x126dc",
+      "end": "0x12758",
+      "name": "-[AppNewsView webView:shouldStartLoadWithRequest:navigationType:]"
+    },
+    {
+      "address": "0x12758",
+      "end": "0x127a8",
+      "name": "-[AppNewsView webViewDidFinishLoad:]"
+    },
+    {
+      "address": "0x127a8",
+      "end": "0x12898",
+      "name": "-[AppNewsView initNews]"
+    },
+    {
+      "address": "0x12898",
+      "end": "0x12940",
+      "name": "-[AppAboutView selectTreasuresLink:]"
+    },
+    {
+      "address": "0x12940",
+      "end": "0x129c8",
+      "name": "-[AppAboutView selectWebsiteLink:]"
+    },
+    {
+      "address": "0x129c8",
+      "end": "0x129dc",
+      "name": "-[AppDrawerView visible]"
+    },
+    {
+      "address": "0x129dc",
+      "end": "0x12ae0",
+      "name": "-[AppDrawerView setVisible:]"
+    },
+    {
+      "address": "0x12ae0",
+      "end": "0x12b50",
+      "name": "-[AppDrawerView selectAboutTab:]"
+    },
+    {
+      "address": "0x12b50",
+      "end": "0x12bd8",
+      "name": "-[AppDrawerView selectNewsTab:]"
+    },
+    {
+      "address": "0x12bd8",
+      "end": "0x12c48",
+      "name": "-[AppDrawerView selectOptionsTab:]"
+    },
+    {
+      "address": "0x12c48",
+      "end": "0x12d48",
+      "name": "-[AppDrawerView awakeFromNib]"
+    },
+    {
+      "address": "0x12d48",
+      "end": "0x12d4c",
+      "name": "-[AppTreasuresViewController viewDidUnload]"
+    },
+    {
+      "address": "0x12d4c",
+      "end": "0x12d60",
+      "name": "-[AppTreasuresViewController viewOrientation]"
+    },
+    {
+      "address": "0x12d60",
+      "end": "0x12d74",
+      "name": "-[AppTreasuresViewController setViewOrientation:]"
+    },
+    {
+      "address": "0x12d74",
+      "end": "0x12d88",
+      "name": "-[AppTreasuresViewController iTunesURL]"
+    },
+    {
+      "address": "0x12d88",
+      "end": "0x12d9c",
+      "name": "-[AppTreasuresViewController errorView]"
+    },
+    {
+      "address": "0x12d9c",
+      "end": "0x12db0",
+      "name": "-[AppTreasuresViewController webView]"
+    },
+    {
+      "address": "0x12db0",
+      "end": "0x12ddc",
+      "name": "-[AppTreasuresViewController shouldAutorotateToInterfaceOrientation:]"
+    },
+    {
+      "address": "0x12ddc",
+      "end": "0x12e50",
+      "name": "-[AppTreasuresViewController dismiss:]"
+    },
+    {
+      "address": "0x12e50",
+      "end": "0x12eb0",
+      "name": "-[AppTreasuresViewController connectionDidFinishLoading:]"
+    },
+    {
+      "address": "0x12eb0",
+      "end": "0x12ef4",
+      "name": "-[AppTreasuresViewController connection:willSendRequest:redirectResponse:]"
+    },
+    {
+      "address": "0x12ef4",
+      "end": "0x12ff4",
+      "name": "-[AppTreasuresViewController webView:shouldStartLoadWithRequest:navigationType:]"
+    },
+    {
+      "address": "0x12ff4",
+      "end": "0x130d4",
+      "name": "-[AppTreasuresViewController webViewDidFinishLoad:]"
+    },
+    {
+      "address": "0x130d4",
+      "end": "0x131b8",
+      "name": "-[AppTreasuresViewController webViewDidStartLoad:]"
+    },
+    {
+      "address": "0x131b8",
+      "end": "0x13238",
+      "name": "-[AppTreasuresViewController displayAppTreasuresInfo]"
+    },
+    {
+      "address": "0x13238",
+      "end": "0x13258",
+      "name": "-[AppTreasuresViewController initWithOrientation:]"
+    },
+    {
+      "address": "0x13258",
+      "end": "0x13338",
+      "name": "(anonymous namespace)::CreateUIImageFromFile(NSString*)"
+    },
+    {
+      "address": "0x13338",
+      "end": "0x133a4",
+      "name": "-[AppTreasuresViewController setDelegate:]"
+    },
+    {
+      "address": "0x133a4",
+      "end": "0x13468",
+      "name": "-[AppTreasuresViewController dealloc]"
+    },
+    {
+      "address": "0x13468",
+      "end": "0x134a4",
+      "name": "-[AppTreasuresViewController didReceiveMemoryWarning]"
+    },
+    {
+      "address": "0x134a4",
+      "end": "0x134e0",
+      "name": "-[AppTreasuresViewController viewDidLoad]"
+    },
+    {
+      "address": "0x134e0",
+      "end": "0x13578",
+      "name": "-[AppTreasuresViewController initWithOrientation:compensateForStatusBar:]"
+    },
+    {
+      "address": "0x13578",
+      "end": "0x135ac",
+      "name": "-[AppTreasuresViewController setWebView:]"
+    },
+    {
+      "address": "0x135ac",
+      "end": "0x135e0",
+      "name": "-[AppTreasuresViewController setErrorView:]"
+    },
+    {
+      "address": "0x135e0",
+      "end": "0x13614",
+      "name": "-[AppTreasuresViewController setITunesURL:]"
+    },
+    {
+      "address": "0x13614",
+      "end": "0x1398c",
+      "name": "-[AppTreasuresViewController webView:didFailLoadWithError:]"
+    },
+    {
+      "address": "0x1398c",
+      "end": "0x13d78",
+      "name": "-[AppTreasuresViewController loadView]"
+    },
+    {
+      "address": "0x13d78",
+      "end": "0x140d8",
+      "name": "-[AppTreasuresViewController createWebViewInContainerView:statusBarShowing:topLeft:bottomRight:]"
+    },
+    {
+      "address": "0x140d8",
+      "end": "0x14468",
+      "name": "-[AppTreasuresViewController createNavBarInContainerView:navBarHeight:topLeft:bottomRight:]"
+    }
+  ]
+}

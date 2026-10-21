@@ -1,0 +1,9 @@
+{
+  "input_archive_sha256": "b6fba3bf08e556bda114b0dd83f941f626b27300910f864366bf53a91dd8f090",
+  "public_archive_sha256": "331a9cd1d5a547f2b603ac8f497097d9438582e7fb3a24a43b14cf617c34e58a",
+  "processing": "Payload-only ZIP, recompressed; signing/DRM sidecar and account metadata excluded. Remaining payload bytes preserved.",
+  "source": {
+    "url": "https://archive.org/download/94iOSApps/iOS%20Apps%20IPAs%2Fusenet%2FKoi%20Pond%202.5.ipa",
+    "sha256": "b6fba3bf08e556bda114b0dd83f941f626b27300910f864366bf53a91dd8f090"
+  }
+}

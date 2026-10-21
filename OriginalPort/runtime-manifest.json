@@ -1,0 +1,62 @@
+{
+  "method": "ahead-of-time constant-opcode specialization; no runtime code generation",
+  "libraries": [
+    {
+      "file": "libgcc_s.1.dylib",
+      "slide": "0x30000000",
+      "slice": "armv7",
+      "sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+      "sections": [
+        {
+          "name": "__text",
+          "address": "0x300011c4",
+          "size": 31328
+        },
+        {
+          "name": "__picsymbolstub4",
+          "address": "0x30008c24",
+          "size": 240
+        },
+        {
+          "name": "__stub_helper",
+          "address": "0x30008f28",
+          "size": 216
+        }
+      ]
+    },
+    {
+      "file": "libstdc++.6.0.9.dylib",
+      "slide": "0x3748a000",
+      "slice": "armv7",
+      "sha256": "22bb45b80a1e590ca6f2e0bd07581084ac56b347b0c6005b05ca5551ef27142a",
+      "sections": [
+        {
+          "name": "__text",
+          "address": "0x3748b1e4",
+          "size": 276680
+        },
+        {
+          "name": "__picsymbolstub4",
+          "address": "0x374ceaac",
+          "size": 1648
+        },
+        {
+          "name": "__stub_helper",
+          "address": "0x374d31b4",
+          "size": 1212
+        }
+      ]
+    }
+  ],
+  "candidate_addresses": {
+    "arm": 77831,
+    "thumb": 155661
+  },
+  "page_count": 614,
+  "guards": [
+    "PC",
+    "ARM/Thumb state",
+    "original instruction bytes"
+  ],
+  "caveat": "Candidates include data and alternate instruction-set interpretations; not executed-code coverage."
+}

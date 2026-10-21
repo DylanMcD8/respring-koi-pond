@@ -1,0 +1,88 @@
+{
+  "fill" : "system-dark",
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "glass" : false,
+          "hidden" : false,
+          "image-name" : "iOS 6 Gloss.svg",
+          "name" : "iOS 6 Gloss"
+        }
+      ],
+      "shadow" : {
+        "kind" : "none",
+        "opacity" : 0.5
+      },
+      "specular" : true,
+      "translucency" : {
+        "enabled" : false,
+        "value" : 0.3
+      }
+    },
+    {
+      "layers" : [
+        {
+          "image-name" : "Koi Pond Pads Top.png",
+          "name" : "Koi Pond Pads Top"
+        },
+        {
+          "image-name" : "Koi Pond Pads Bottom.png",
+          "name" : "Koi Pond Pads Bottom"
+        },
+        {
+          "image-name" : "Koi Pond Fish.png",
+          "name" : "Koi Pond Fish"
+        }
+      ],
+      "shadow-specializations" : [
+        {
+          "value" : {
+            "kind" : "neutral",
+            "opacity" : 0.5
+          }
+        },
+        {
+          "appearance" : "light",
+          "value" : {
+            "kind" : "none",
+            "opacity" : 0.5
+          }
+        }
+      ],
+      "translucency" : {
+        "enabled" : false,
+        "value" : 0
+      }
+    },
+    {
+      "hidden-specializations" : [
+        {
+          "value" : true
+        },
+        {
+          "appearance" : "light",
+          "value" : false
+        }
+      ],
+      "layers" : [
+        {
+          "glass" : false,
+          "image-name" : "Koi Pond Full 2.png",
+          "name" : "Koi Pond Full"
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.3
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "squares" : "shared"
+  }
+}

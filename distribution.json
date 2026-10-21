@@ -1,0 +1,15 @@
+{
+  "name": "Koi Pond",
+  "version": "0.1",
+  "build": "15",
+  "bundle": "com.dylanmcdonald.koipond",
+  "family": [
+    1,
+    2
+  ],
+  "port": "OriginalPort",
+  "project": "KoiPond",
+  "header": "KoiPondRespringHeader.webp",
+  "execution": "static ARM/Thumb-to-ARM64 translation; interpreter fallback disabled",
+  "original_archive": "Original/Koi-Pond-2.5.ipa"
+}

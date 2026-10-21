@@ -3,27 +3,23 @@
 </p>
 
 # Respring – Koi Pond
-The original Koi Pond, restored for modern iPhone/iPad devices as part of Respring.
+One of the iconic classic iPhone apps, never quite replicated in any future attempt. So, with the help of Codex (GPT-6 Astra and GPT 6.1 Sol), you can once again relax with your own koi pond on any modern iOS device!
 
 ### How does it work?
-This build runs the original Koi Pond game through ahead-of-time ARM/Thumb-to-ARM64 translation. A modified touchHLE runtime supplies the legacy iOS APIs, with native iOS presentation and audio handling. No JIT is required, and the shipping configuration has no CPU interpreter fallback.
+This build runs the original Koi Pond game through ahead-of-time ARM/Thumb-to-ARM64 translation. A modified touchHLE runtime supplies the legacy iOS APIs, with native iOS presentation and audio handling. No JIT required!
 
 ### Enhancements
-- Full Resolution: render the pond at display resolution while retaining the original 3.5-inch iPhone aspect ratio.
-- Unlock Frame Rate: choose the original 24 FPS behavior or rendering up to 60 FPS, or 120 FPS on ProMotion displays.
-- Fill Screen (Cropped): optionally enlarge the original play area to fill the display.
-- Modern lifecycle: audio resumes after interruptions, and the app stays awake during use. The sleep timer allows normal Auto-Lock instead of closing the app.
-- App Icon: an editable Icon Composer icon with modern appearances.
-- Duo support: the native window adapts to rotation and display changes on iOS 27.1 and later.
+- Full Resolution: render the pond at full resolution, while retaining the original 3.5-inch iPhone aspect ratio.
+- Full Frame Rate: the original app was stuck at 24 FPS. Now, you can enjoy up to 120 FPS!
+- Fill Screen: if you are using iPhone Duo, you'll notice that the aspect ratios of the displays are very close to that of a 3.5-inch iPhone. This option fills the screen so you don't have slight black bars on the side.
+- App Icon: I have "remastered" the app icon with Icon Composer with full support for Default, Dark, Clear, and Tinted modes.
 
 ### Notes
-- Change the enhancements in Settings → Apps → Koi Pond, then force quit and reopen the app.
-- Cropped fill can cut off content; it does not change the original pond layout.
-- Full-resolution rendering does not replace the original low-resolution artwork.
-- The sleep timer follows system Auto-Lock settings; it cannot force a device lock or override Auto-Lock set to Never.
-- If you encounter a crash or another problem, please open an Issue on this repository.
+- The app enhancements can be enabled or disabled in Settings → Apps → Koi Pond.
+- The app relies on using the 3.5-inch iPhone aspect ratio. This new build doesn't attempt to change or "fix" that.
+- It's not perfect! There may still be crashes. If you experience a crash or some other issue, please open an Issue on this repository.
 
-This restoration and its technical documentation were developed with help from generative AI.
+As stated before, this project was achieved through the usage of generative AI. Outside of this README and Releases release notes, most things were written by an AI agent.
 
 ## How to Install
 Download **Koi-Pond.ipa** from [Releases](https://github.com/DylanMcD8/respring-koi-pond/releases). It is an **unsigned ARM64 device IPA**: use your own signing/sideloading workflow to sign it for your device. [Sideloadly](https://sideloadly.io) is one option.
